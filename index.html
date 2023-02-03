@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨PlayJS✨</title></head>
+    <!-- LOAD Tone.js from unpkg -->
+    <script src="http://unpkg.com/tone"></script>
+<body>
+    <div class="block"> 
+        <div class="header"></div>
+        <div class="controls">
+            <div class="input">
+                <span>PLAY "</span>
+                <input type="text" id="input" value="T240 47 45L16 45L1 23 10 30L1 0 0 0 " style="width: 600px;">
+                <span>"</span>
+            </div>
+            <div class="play">
+                <input type="button" id="play" value="Play!">
+                <input type="button" id="stop" value="Stop!"><br>
+                <input type="button" id="random" value="Play random note!"><br>
+                <input type="button" id="demo" value="Play demo!">
+
+            </div>
+            <div class="loop">
+                <input type="checkbox" id="isLoop" name="loop">
+                <label for="loop">Loop</label>
+            </div>
+            <div class="volume">
+                <input type="range" id="volume" name="volume" min="0" max="100" value="70">
+                <label for="volume">Volume</label>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
